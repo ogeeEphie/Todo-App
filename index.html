@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Todo</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+
+    
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card bg-success">
+          <div class="card-header">
+            <h3 class="text-center">A Simple Todo Application</h3>
+          </div>
+
+          <div class="card-body">
+                <form id="task-form">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Type tasks here..." id="todo-text" required>
+                    <select class="custom-select" id="priority" required>
+                      <option value="">Task Priority</option>
+                      <option value="High">High</option>
+                      <option value="Medium">Medium</option>
+                      <option value="Low">Low</option>
+                    </select>
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="submit">Add Task</button>
+                    </div>
+                  </div>
+                  
+                </form>
+                <div class="bg-light p-2 mt-5 rounded">
+                  <h5 class="p-3">Your Tasks</h5>
+                  <ul id="todo-list" class="list-group list-group-flush">
+                  </ul>
+                </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+<script src="./jscript.js"></script>
+</body>
+</html>
